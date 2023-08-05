@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!--  HEADER -->
@@ -42,7 +43,7 @@
           </ul>
         </nav>
         <address class="contacts">
-          <ul class="list header-list">
+          <ul class="list header-list contact-list-tabl">
             <li>
               <a
                 class="contact-phone-number link"
@@ -54,6 +55,85 @@
               <a class="contact-phone-number link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
+            </li>
+          </ul>
+        </address>
+        <button class="menu-open-btn" data-menu-open type="button">
+          <svg class="modal-icon-open" width="32" height="22">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button class="menu-close-btn" data-menu-close type="button">
+            <svg class="modal-icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="navigation-modal">
+            <ul class="mob-header-list list">
+              <li class="mob-header-item">
+                <a
+                  class="mob-activ-color mob-header-link link"
+                  href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-header-item">
+                <a class="link mob-header-link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-header-item">
+                <a class="link mob-header-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <address class="mob-contacts mob-contact-nav">
+          <ul class="list mob-contact-list">
+            <li class="mob-contact-item-phone">
+              <a class="mob-contact-phone-number link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-contact-item-email">
+              <a
+                class="mob-contact-email-number link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-social-list list">
+            <li class="mob-social-list-item">
+              <a href="" class="mob-social-list-link">
+                <svg class="mob-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-list-item">
+              <a href="" class="mob-social-list-link">
+                <svg class="mob-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-list-item">
+              <a href="" class="mob-social-list-link">
+                <svg class="mob-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-list-item">
+              <a href="" class="mob-social-list-link">
+                <svg class="mob-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </address>
@@ -84,8 +164,8 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="section-subheadings">Strategy</h3>
-              <p class="section-description">
+              <h3 class="work-subheadings">Strategy</h3>
+              <p class="work-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -96,8 +176,8 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="section-subheadings">Punctuality</h3>
-              <p class="section-description">
+              <h3 class="work-subheadings">Punctuality</h3>
+              <p class="work-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -108,8 +188,8 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="section-subheadings">Diligence</h3>
-              <p class="section-description">
+              <h3 class="work-subheadings">Diligence</h3>
+              <p class="work-description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -120,8 +200,8 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="section-subheadings">Technologies</h3>
-              <p class="section-description">
+              <h3 class="work-subheadings">Technologies</h3>
+              <p class="work-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -139,6 +219,7 @@
             <li class="processing-cards">
               <img
                 src="./images/our_work/img-1.jpg"
+                srcset="./images/our_work/img-1-2x.jpg 2x"
                 alt="Revenue"
                 width="360"
                 height="300"
@@ -147,6 +228,7 @@
             <li class="processing-cards">
               <img
                 src="./images/our_work/img-2.jpg"
+                srcset="./images/our_work/img-2-2x.jpg 2x"
                 alt="Communication"
                 width="360"
                 height="300"
@@ -155,6 +237,7 @@
             <li class="processing-cards">
               <img
                 src="./images/our_work/img-3.jpg"
+                srcset="./images/our_work/img-3-2x.jpg 2x"
                 alt="The Most Inspiring Places"
                 width="360"
                 height="300"
@@ -168,11 +251,12 @@
       <!-- SECTION - Our Team -->
       <section class="section-team">
         <div class="container">
-          <h2 class="headings-h2">Our Team</h2>
+          <h2 class="team-headings">Our Team</h2>
           <ul class="list team-list">
             <li class="team-cards">
               <img
                 src="./images/our_team/img.jpg"
+                srcset="./images/our_team/img-2x.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -215,6 +299,7 @@
             <li class="team-cards">
               <img
                 src="./images/our_team/img(1).jpg"
+                srcset="./images/our_team/img(1)-2x.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -257,6 +342,7 @@
             <li class="team-cards">
               <img
                 src="./images/our_team/img(2).jpg"
+                srcset="./images/our_team/img(2)-2x.jpg 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -299,6 +385,7 @@
             <li class="team-cards">
               <img
                 src="./images/our_team/img(3).jpg"
+                srcset="./images/our_team/img(3)-2x.jpg 2x"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -400,7 +487,7 @@
     <footer class="footer-page">
       <div class="container footer-flex">
         <div class="footer-logo-container">
-          <a class="logo link link-footer" href="./index.html"
+          <a class="logo-footer link" href="./index.html"
             >Web<span class="accent-logo-footer">Studio</span>
           </a>
           <p class="footer-description">
@@ -552,5 +639,6 @@
     </div>
     <!-- ---------------MODAL--------------------  -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>
