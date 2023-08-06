@@ -12,7 +12,6 @@
   --icon-customers: #8e8f99;
   --white-modal: #fcfcfc;
 }
-
 h1,
 h2,
 h3,
@@ -20,12 +19,10 @@ h4,
 p {
   margin: 0;
 }
-
 img {
   display: block;
   max-width: 100%;
 }
-
 button {
   cursor: pointer;
 }
@@ -41,21 +38,17 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .link {
   text-decoration: none;
 }
-
 .list {
   list-style: none;
 }
-
 ul {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
-
 body {
   font-family: var(--primary-font);
   color: var(--body-text-color);
@@ -69,7 +62,6 @@ body {
 }
 .section-work,
 .section-team,
-.section-doing,
 .section-customers {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -83,17 +75,11 @@ body {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
-
 .page-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.header-list {
-  display: none;
-}
-
 .logo {
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -105,14 +91,15 @@ body {
   margin-right: 76px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .logo:hover,
 .logo:focus {
   color: var(--pressed-state);
 }
-
 .accent-logo-header {
   color: var(--dark-color);
+}
+.header-list {
+  display: none;
 }
 .menu-open-btn {
   display: inline-flex;
@@ -122,7 +109,6 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
 .mob-menu {
   position: fixed;
   top: 0;
@@ -137,7 +123,6 @@ body {
   justify-content: space-between;
   pointer-events: visible;
 }
-
 .menu-close-btn {
   position: absolute;
   display: flex;
@@ -151,16 +136,13 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .mob-header-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
   pointer-events: visible;
 }
-.mob-activ-color.link {
-  color: #404bbf;
-}
+
 .mob-header-link {
   font-family: var(--primary-font);
   font-size: 36px;
@@ -169,6 +151,9 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
+}
+.mob-activ-color.link {
+  color: var(--pressed-state);
 }
 .mob-contact-list {
   display: flex;
@@ -180,26 +165,25 @@ body {
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 36px;
+  font-style: normal;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-brand);
 }
-
 .mob-contact-email-number {
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  font-style: normal;
   color: var(--body-text-color);
 }
-
 .mob-social-list {
   display: flex;
   gap: 56px;
   align-items: center;
 }
-
 .mob-social-list-item {
   width: 40px;
   height: 40px;
@@ -209,7 +193,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .mob-social-list-link {
   display: flex;
   border-radius: 50%;
@@ -220,7 +203,6 @@ body {
 .mob-social-list-icon {
   fill: var(--white-background);
 }
-
 /* ====================== /HEADER =====================*/
 
 /* ================== HERO===================== */
@@ -257,7 +239,16 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
+.hero-title {
+  font-family: var(--primary-font);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-background);
+  max-width: 320px;
+  margin-bottom: 72px;
+}
 .hero-btn {
   font-family: var(--primary-font);
   font-weight: 500;
@@ -273,22 +264,10 @@ body {
   min-width: 169px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--pressed-state);
   color: var(--white-background);
-}
-
-.hero-title {
-  font-family: var(--primary-font);
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--white-background);
-  max-width: 320px;
-  margin-bottom: 72px;
 }
 
 /* ================== /HERO===================== */
@@ -308,12 +287,13 @@ body {
 
 .work-subheadings {
   font-family: var(--primary-font);
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--dark-color);
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .work-description {
@@ -324,9 +304,6 @@ body {
   letter-spacing: 0.04em;
   color: var(--body-text-color);
 }
-.work-subheadings {
-  text-align: center;
-}
 
 /* ====================/SECTION WORK ====================== */
 
@@ -334,12 +311,31 @@ body {
 .section-doing {
   display: none;
 }
-
+.headings-h2 {
+  font-family: var(--primary-font);
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  margin-bottom: 72px;
+}
 /* ====================/What are we doing ====================== */
 
 /* ================== Our TEAM===================== */
 .section-team {
   background-color: var(--light-background-color);
+}
+.team-headings {
+  font-family: var(--primary-font);
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -357,15 +353,8 @@ body {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.team-headings {
-  font-family: var(--primary-font);
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--dark-color);
-  margin-bottom: 72px;
+.team-text {
+  padding: 32px 0;
 }
 
 .team-subheadings {
@@ -386,9 +375,7 @@ body {
   color: var(--body-text-color);
   text-align: center;
 }
-.team-text {
-  padding: 32px 0;
-}
+
 .social-list {
   display: flex;
   gap: 24px;
@@ -417,17 +404,7 @@ body {
 }
 
 /* ================== /Our TEAM===================== */
-/* ================== CUSTOMERS===================== */
-.headings-h2 {
-  font-family: var(--primary-font);
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--dark-color);
-  margin-bottom: 72px;
-}
+
 /* ================== CUSTOMERS===================== */
 
 .customers-list {
@@ -438,10 +415,14 @@ body {
   column-gap: 16px;
   row-gap: 72px;
 }
+.customers-list :hover,
+.customers-list :focus {
+  color: var(--pressed-state);
+  border-color: var(--pressed-state);
+}
 
 .customers-link {
   width: 190px;
-  /* width: 168px; */
   height: 88px;
   display: flex;
   align-items: center;
@@ -455,12 +436,6 @@ body {
 
 .customers-icon {
   fill: currentColor;
-}
-
-.customers-list :hover,
-.customers-list :focus {
-  color: var(--pressed-state);
-  border-color: var(--pressed-state);
 }
 
 /* ================== /CUSTOMERS===================== */
@@ -494,7 +469,9 @@ body {
   margin-bottom: 16px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.accent-logo-footer {
+  color: var(--light-background-color);
+}
 .footer-description {
   font-family: var(--primary-font);
   font-size: 16px;
@@ -509,13 +486,7 @@ body {
   align-items: center;
   margin-bottom: 72px;
 }
-.accent-logo-footer {
-  color: var(--light-background-color);
-}
-.media-list {
-  display: flex;
-  gap: 16px;
-}
+
 .social-media-heading-input {
   font-family: var(--primary-font);
   font-weight: 500;
@@ -525,6 +496,11 @@ body {
   color: var(--white-background);
   margin-bottom: 16px;
 }
+.media-list {
+  display: flex;
+  gap: 16px;
+}
+
 .media-list-link {
   width: 40px;
   height: 40px;
@@ -602,10 +578,6 @@ body {
 /* ======================/ FOOTER ==================== */
 
 /* ===================PORTFOLIO=============== */
-.container-cards {
-  display: flex;
-  flex-direction: column;
-}
 .navigation-page {
   padding-bottom: 120px;
   padding-top: 96px;
@@ -784,14 +756,13 @@ body {
   color: var(--dark-color);
   margin-bottom: 16px;
 }
-
-.modal-container {
-  margin-bottom: 8px;
-}
-
 .modal-form {
   display: flex;
   flex-direction: column;
+}
+
+.modal-container {
+  margin-bottom: 8px;
 }
 
 .input-text {
@@ -834,7 +805,7 @@ body {
   fill: var(--primary-brand);
 }
 
-.moda-field-textarea {
+.modal-field-textarea {
   margin-bottom: 16px;
 }
 .modal-textarea {

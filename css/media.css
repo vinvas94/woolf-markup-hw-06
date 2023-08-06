@@ -1,3 +1,35 @@
+/* ================WIDTH 320-427================= */
+@media (min-width: 320px) and (max-width: 427px) {
+  .modal {
+    width: 320px;
+  }
+
+  .modal-title {
+    font-size: 12px;
+  }
+
+  .check-text {
+    font-size: 9px;
+  }
+
+  .mob-contact-item-phone a {
+    font-size: 26px;
+  }
+  .mob-social-list {
+    gap: 34px;
+  }
+  .hero-title {
+    font-size: 32px;
+    max-width: 320px;
+  }
+  .input-footer-form {
+    width: 100%;
+  }
+}
+/* ================////WIDTH 320-427================= */
+
+/* ================WIDTH 428-767================= */
+
 @media (min-width: 428px) {
   .container {
     width: 428px;
@@ -6,8 +38,16 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .hero-title {
+    max-width: 320px;
+  }
+  .input-footer-form {
+    width: 398px;
+  }
 }
+/* ================////WIDTH 428-767================= */
 
+/* ================WIDTH 768-1158================= */
 @media (min-width: 768px) {
   .container {
     width: 768px;
@@ -26,7 +66,6 @@
     align-items: center;
     gap: 40px;
   }
-
   .header-link {
     font-weight: 500;
     font-size: 16px;
@@ -37,7 +76,6 @@
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
   .header-link:hover,
   .header-link:focus {
     color: var(--pressed-state);
@@ -58,7 +96,6 @@
     color: var(--body-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
   .contact-phone-number:hover,
   .contact-phone-number:focus {
     color: var(--pressed-state);
@@ -67,7 +104,6 @@
     position: relative;
     color: var(--pressed-state);
   }
-
   .linea-header::after {
     position: absolute;
     content: "";
@@ -110,12 +146,6 @@
     max-width: 496px;
     margin-bottom: 36px;
   }
-
-  .team-list {
-    row-gap: 64px;
-    column-gap: 24px;
-  }
-
   .work-cards {
     width: calc((100% - 24px) / 2);
   }
@@ -126,7 +156,10 @@
   .work-subheadings {
     text-align: start;
   }
-
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
   .customers-list {
     column-gap: 24px;
   }
@@ -138,7 +171,7 @@
     align-items: baseline;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 108px;
+    max-width: 582px;
   }
   .footer-logo-container {
     align-items: start;
@@ -172,8 +205,10 @@
     flex-basis: calc((100% - 24px) / 2);
   }
 }
+/* ================////WIDTH 768-1158================= */
 
-@media (min-width: 1200px) {
+/* ================WIDTH  1158================= */
+@media (min-width: 1158px) {
   .container {
     width: 1158px;
     padding-left: 15px;
@@ -183,18 +218,15 @@
   }
   .section-work,
   .section-team,
-  .section-doing,
   .section-customers {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-
   .header-list {
     flex-direction: row;
     align-items: center;
     gap: 40px;
   }
-
   .contact-phone-number {
     font-size: 16px;
     line-height: 1.5;
@@ -207,10 +239,10 @@
     padding-top: 188px;
     padding-bottom: 188px;
   }
-
   .hero-title {
     margin-bottom: 48px;
   }
+
   .work-cards {
     width: calc((100% - 72px) / 4);
   }
@@ -219,11 +251,11 @@
   }
   .work-subheadings {
     font-size: 20px;
+    font-weight: 500;
   }
   .work-description {
     font-weight: 400;
   }
-
   .icon-container-work {
     display: flex;
     align-items: center;
@@ -233,8 +265,8 @@
     border-radius: 4px;
     margin-bottom: 8px;
   }
-
   .section-doing {
+    padding-bottom: 120px;
     display: flex;
   }
   .processing-list {
@@ -242,12 +274,12 @@
     flex-wrap: wrap;
     gap: 24px;
   }
-
   .customers-list {
     gap: 24px;
   }
   .footer-flex {
     flex-wrap: nowrap;
+    max-width: none;
   }
   .footer-page {
     padding-top: 100px;
@@ -268,7 +300,6 @@
     display: flex;
     gap: 24px;
   }
-
   .navigation-list {
     margin-bottom: 72px;
   }
@@ -279,3 +310,4 @@
     flex-basis: calc((100% - 48px) / 3);
   }
 }
+/* ================/// WIDTH1158================= */
